@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@color/login_bk_color" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="Already \nhave an \nAccount?" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/viewParent.headerText.NoMode" />
+                <ImageView android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/mmm" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/textInputEmail" android:layout_marginTop="@dimen/loginViewsMargin" style="@style/parent">
+                <EditText android:id="@id/editTextEmail123" android:hint="@string/login_email_hint" android:maxLines="1" android:inputType="textEmailAddress" style="@style/modifiedEditText" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/textInputPassword" android:layout_marginTop="@dimen/loginViewsMargin" style="@style/parent">
+                <EditText android:id="@id/editTextPassword123" android:hint="@string/login_password_hint" android:maxLines="1" android:inputType="textPassword" style="@style/modifiedEditText" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView android:textSize="@dimen/newsMoreTextSize" android:textColor="@color/primaryTextColor" android:layout_gravity="end" android:layout_marginTop="10.0dip" android:text="Forgot Password?" style="@style/viewParent" />x <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton android:layout_gravity="center_horizontal" android:id="@id/cirLoginButton" android:layout_marginTop="@dimen/loginViewsMargin" android:text="Login" app:initialCornerAngle="27.0dip" app:spinning_bar_color="#ffffffff" app:spinning_bar_padding="6.0dip" app:spinning_bar_width="4.0dip" style="@style/loginButton" />
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/themeColor" android:layout_marginTop="@dimen/loginViewsMargin" android:text="New user? Register Now" android:onClick="onLoginClick" android:textAlignment="center" android:layout_alignParentStart="true" style="@style/parent" />
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:weightSum="12.0">
+                <View android:background="@color/colorPrimaryDark" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="3.0" />
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Use other Methods ( Coming Soon )" android:layout_weight="6.0" android:textAlignment="center" style="@style/viewParent.headerText.NoMode" />
+                <View android:background="@color/colorPrimaryDark" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_facebook" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_google_plus" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@drawable/ic_side_bg" android:layout_width="11.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/ic_back_img3" android:adjustViewBounds="false" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="onLoginClick" />
+</RelativeLayout>

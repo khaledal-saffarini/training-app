@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/colorbackg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/t1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/h" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/head02" android:layout_width="fill_parent" android:layout_height="235.0dip">
+                    <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="85.0dip" android:text="التمارين اليومية" android:foregroundGravity="center" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/t_1" android:background="@drawable/bbb22" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="10.0dip" android:layout_below="@id/h" android:onClick="goToTrain1">
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:layout_weight="2.0">
+                    <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/t1_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Push Up" android:layout_weight="2.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/Blue" android:gravity="left" android:id="@id/ti_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" android:text="00:30s" android:layout_weight="1.0" android:layout_marginHorizontal="10.0dip" />
+                </LinearLayout>
+                <pl.droidsonroids.gif.GifImageView android:layout_width="30.0dip" android:layout_height="77.0dip" android:layout_margin="20.0dip" android:src="@drawable/push_up" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/t_2" android:background="@drawable/bgb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="10.0dip" android:layout_below="@id/t_1" android:onClick="goToTrain2">
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+                    <TextView android:textSize="24.0sp" android:textColor="#ff000000" android:gravity="left" android:id="@id/t2_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Plank" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/Blue" android:gravity="left" android:id="@id/t2_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="00:20'" />
+                </LinearLayout>
+                <pl.droidsonroids.gif.GifImageView android:layout_width="30.0dip" android:layout_height="77.0dip" android:layout_margin="10.0dip" android:src="@drawable/plank" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

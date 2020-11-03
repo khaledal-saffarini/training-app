@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffd7e1e1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/head02" android:layout_width="fill_parent" android:layout_height="235.0dip">
+                <TextView android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="85.0dip" android:text="لائحة الطعام" android:foregroundGravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/hsv" android:fitsSystemWindows="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="230.0dip" android:measureAllChildren="false" android:fillViewport="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="380.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:background="@drawable/back4breakfast" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+                    <Button android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="الفطور" android:foregroundGravity="center" />
+                </LinearLayout>
+                <ScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/bftxt" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="لحظة من فضلك" android:foregroundGravity="center" />
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="404.0dip" android:layout_height="fill_parent">
+                <LinearLayout android:background="@drawable/back4lunch" android:layout_width="360.0dip" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+                    <Button android:textSize="36.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="الغداء" android:foregroundGravity="center" />
+                </LinearLayout>
+                <ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="20.0dip">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ltxt" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="لحظة من فضلك" android:foregroundGravity="center" />
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="403.0dip" android:layout_height="490.0dip">
+                <LinearLayout android:background="@drawable/back4dinner" android:layout_width="350.0dip" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+                    <Button android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="العشاء" android:foregroundGravity="center" />
+                </LinearLayout>
+                <ScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/Dtxt" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="لحظة من فضلك" android:foregroundGravity="center" />
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:background="@drawable/back4snacks2" android:layout_width="360.0dip" android:layout_height="200.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+                    <Button android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:background="@null" android:layout_width="196.0dip" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="الوجبات                      الخفيفة" android:foregroundGravity="center" />
+                </LinearLayout>
+                <ScrollView android:layout_gravity="center" android:layout_width="360.0dip" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/Stxt" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="لحظة من فضلك" android:foregroundGravity="center" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageView3" android:layout_width="fill_parent" android:layout_height="70.0dip" android:scaleType="centerCrop" app:srcCompat="@drawable/head2" />
+        <pl.droidsonroids.gif.GifImageView android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="50.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/plank" android:layout_weight="1.0" />
+        <TextView android:textSize="40.0sp" android:textColor="@color/Blue" android:gravity="center" android:id="@id/counttime" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="20" android:layout_weight="2.0" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

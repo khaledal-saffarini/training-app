@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/head02" android:layout_width="fill_parent" android:layout_height="320.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/head_01" android:layout_width="fill_parent" android:layout_height="220.0dip">
+                    <ImageView android:id="@id/b5" android:paddingTop="45.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip" android:onClick="gotoprof" app:srcCompat="@drawable/usert" />
+                    <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/UserName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="اسم المتدرب" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/head_2" android:background="@drawable/bbb2" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_below="@id/head_01">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/Task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="التمارين" />
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/TaskNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/Level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="المستوى" />
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/UserLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/inDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="آخر دخول" />
+                        <TextView android:textSize="20.0sp" android:textColor="#ff0b1252" android:id="@id/NumInDay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/b1" android:background="@drawable/back4food222" android:layout_width="fill_parent" android:layout_height="200.0dip" android:onClick="goToFood">
+                <Button android:textSize="34.0sp" android:gravity="left" android:id="@id/foodButt" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:text="التغذية " android:onClick="goToFood" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/b2" android:background="@drawable/back4task222" android:layout_width="fill_parent" android:layout_height="200.0dip" android:onClick="goToTask">
+                <Button android:textSize="34.0sp" android:gravity="center" android:layout_gravity="left" android:id="@id/taskButt" android:background="@null" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:text="التمارين " />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/b3" android:background="@drawable/back4cal" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="16.0dip" android:onClick="goTocal">
+                <Button android:textSize="34.0sp" android:gravity="center" android:layout_gravity="right" android:id="@id/calButt" android:background="@null" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:text="الجدول " />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="left" android:orientation="vertical" android:id="@id/b4" android:background="@drawable/store" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:onClick="gotostore" android:layout_marginHorizontal="15.0dip">
+                <Button android:textSize="30.0sp" android:gravity="center" android:layout_gravity="left" android:id="@id/storeButt" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="40.0dip" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
